@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.AddQuoteActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bacground_addquote" />
+
+    <ImageView
+        android:id="@+id/imgAddQuote"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_quote" />
+
+    <TextView
+        android:id="@+id/txtAddQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Agregar Cita"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAddAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:drawableLeft="@drawable/author_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/author"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAddQuote" />
+
+    <Button
+        android:id="@+id/buttonAddQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:backgroundTint="#CFD8DC"
+        android:text="Agregar"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="120dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddQuote"
+        tools:layout_editor_absoluteX="120dp" />
+
+    <EditText
+        android:id="@+id/edtAddQuote"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/add_quote_icon"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/quote"
+        android:layout_marginStart="20dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddAuthor"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
