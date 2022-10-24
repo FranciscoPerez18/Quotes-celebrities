@@ -18,7 +18,7 @@
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#CFD8DC"
+            android:background="#5F9590"
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleTextColor="#CFD8DC" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -26,16 +26,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="57dp">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitEnd"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:srcCompat="@drawable/background_item" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="57dp"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

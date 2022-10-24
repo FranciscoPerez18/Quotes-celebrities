@@ -4,7 +4,7 @@
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="#455A64"
+    android:background="#5F9590"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackgroundBorderless"
@@ -17,13 +17,13 @@
         android:id="@+id/nav_header_imageview"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/escritor"/>
+        android:src="@drawable/person"/>
 
     <TextView
         android:id="@+id/nav_header_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
+        android:paddingTop="20dp"
         android:text="Citas Celebres"
         android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
